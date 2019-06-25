@@ -7,7 +7,7 @@ cd
 
 pwd
 ->usage: pwd
-->function: Prints the "working directory" which means it prints the filepath of current directory. 
+->function: Prints the "working directory" which means it prints the filepath of current directory.
 
 ls
 ->usage: ls folder_path
@@ -15,9 +15,19 @@ ls
 ->bonus functions: Can see further details (permissions, date modified, etc.) with '-la' flag. 'l' will show details, 'a' will reveal hidden files/folders you have permission to see.
 ->bonus usage: ls -la folder_path
 
+mv
+->usage: mv file_to_move location_you_want_it
+->function: Will move a file/folder to the supplied path.
+->bonus functions: will change the name of a file if a new name instead of path is provided. Will also overwrite file in new location if a file has an identical name.
+
+cp
+->usage: cp file cpy_location
+->function: Will copy a file and create a duplicate in the location supplied.
+->bonus functions: Like with mv, you can overwrite files with cp.
+
 mkdir
 ->usage: mkdir folder_path
-->function: Creates a folder with the name supplied. 
+->function: Creates a folder with the name supplied.
 
 rmdir
 ->usage: rmdir folder_path
@@ -27,7 +37,7 @@ rmdir
 rm
 ->usage: rm file_path
 ->function: Deletes file in path supplied.
-->bonus functions: When supplied with the '-rf' flag, rm will delete files, folders, etc., even if they are not empty. Use with caution. 
+->bonus functions: When supplied with the '-rf' flag, rm will delete files, folders, etc., even if they are not empty. Use with caution.
 ->bonus usage: rm -rf file_path
 
 touch
@@ -53,9 +63,3 @@ git
 ->git commit -m "message"
 -->readies your commit. It's good form to include a message, no matter how minor.
 ->git push
-
-python libraries
--pickle
--os
--scipy (basic)
--numpy (basic)
