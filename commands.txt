@@ -1,0 +1,61 @@
+
+basic file manipulation
+
+cd
+->usage: cd folder_path
+->function: Puts user in designated folder. No folder_path will return to ~ folder.
+
+pwd
+->usage: pwd
+->function: Prints the "working directory" which means it prints the filepath of current directory. 
+
+ls
+->usage: ls folder_path
+->function: Prints contents of current directory if no folder_path is supplied. Prints contents of folder_path if supplied.
+->bonus functions: Can see further details (permissions, date modified, etc.) with '-la' flag. 'l' will show details, 'a' will reveal hidden files/folders you have permission to see.
+->bonus usage: ls -la folder_path
+
+mkdir
+->usage: mkdir folder_path
+->function: Creates a folder with the name supplied. 
+
+rmdir
+->usage: rmdir folder_path
+->function: Deletes folder in path supplied.
+->bonus functions: Cannot delete folder with any contents so it's a safe way to delete folders.
+
+rm
+->usage: rm file_path
+->function: Deletes file in path supplied.
+->bonus functions: When supplied with the '-rf' flag, rm will delete files, folders, etc., even if they are not empty. Use with caution. 
+->bonus usage: rm -rf file_path
+
+touch
+->usage: touch file_name
+->function: Creates an empty file in path supplied.
+
+vim
+->usage: vim file_name
+->function: Edits file in path supplied.
+->bonus functions: Can't go over everything here, but if no file exists in path, when exiting vim, you will create a file wherever the path points to IF you save on the way out.
+
+git
+->git clone https://gitpath.git
+-->clones a local copy of the repository you supplied
+->git pull
+-->pulls any changes made to your local copy of the repository from earlier.
+->git add file_path
+-->adds file/folder in path to your commit.
+->git add .
+-->adds all files/folders/subfolders from current directory that have changed to your commit.
+->git add -A
+-->adds all files/folders/subfolders from current directory that have changed to your commit. Also adds files/folders/subfolders ABOVE current directory that have changed to your commit.
+->git commit -m "message"
+-->readies your commit. It's good form to include a message, no matter how minor.
+->git push
+
+python libraries
+-pickle
+-os
+-scipy (basic)
+-numpy (basic)
